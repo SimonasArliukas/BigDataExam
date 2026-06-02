@@ -1,0 +1,8 @@
+version: '3.8'
+
+services:
+  ais-analyzer:
+    build: .
+    container_name: spark_ais_container
+    volumes:
+      - .:/workspace
