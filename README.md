@@ -2,7 +2,6 @@
 
 This project is a PySpark-based data pipeline designed to process large-scale Automatic Identification System (AIS) ship tracking data. It filters, downsamples, and runs kinematic join algorithms to isolate, verify, and reconstruct marine vessel collision events. 
 
-The system specifically targets asymmetric vessel encounters (e.g., Cargo vs. Tug/Workboat) utilizing parallelized geospatial geofencing and time-bucketing techniques.
 
 ## 🚀 Features
 * **Big Data Processing:** Uses **Apache PySpark** to process hundreds of millions of tracking data rows concurrently.
@@ -23,7 +22,6 @@ The system specifically targets asymmetric vessel encounters (e.g., Cargo vs. Tu
 ## 📂 Project Structure
 ```text
 BigDataExam/
-├── data/                    # Put your raw .csv data files here (local only)
 ├── output/                  # Directory where trajectory charts are saved
 ├── Dockerfile               # Production multi-stage image definition
 ├── docker-compose.yml       # Orchestration layer configuration
